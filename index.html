@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WXZ — Mens Clothing · Abuja</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- MOBILE NAV OVERLAY -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#collections" onclick="closeMobileNav()">Collections</a>
+  <a href="#lookbook"    onclick="closeMobileNav()">Lookbook</a>
+  <a href="#about"       onclick="closeMobileNav()">About</a>
+  <a href="#store"       onclick="closeMobileNav()">Store</a>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">W<span>X</span>Z</a>
+  <ul class="nav-links">
+    <li><a href="#collections">Collections</a></li>
+    <li><a href="#lookbook">Lookbook</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#store">Store</a></li>
+  </ul>
+  <button class="nav-cart" id="cartBtn">Bag (0)</button>
+  <button class="nav-hamburger" id="hamburger" onclick="toggleMobileNav()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-tag reveal">Abuja, Nigeria · SS 2026</div>
+    <h1 class="hero-headline reveal reveal-delay-1">
+      Wear<br /><em>With</em><br />Intent
+    </h1>
+    <p class="hero-sub reveal reveal-delay-2">
+      WXZ is menswear built for those who move through the world with presence.
+      Heavy embroidery. Wide silhouettes. Crafted in Abuja, worn everywhere.
+    </p>
+    <div class="hero-cta-group reveal reveal-delay-3">
+      <a href="#collections" class="btn-primary">Shop Collection</a>
+      <a href="#lookbook" class="btn-ghost">View Lookbook</a>
+    </div>
+    <div class="hero-badge reveal reveal-delay-4">Abuja · Nigeria · Est. 2024</div>
+  </div>
+  <div class="hero-right">
+    <img src="images/hero.jpg" alt="WXZ Galaxy Knit Sweater" class="hero-image-main" />
+    <span class="hero-overlay-text">Galaxy Knit Series · 001</span>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item">New Arrivals</span>
+    <span class="marquee-item">WXZ Mens Clothing</span>
+    <span class="marquee-item">Abuja Nigeria</span>
+    <span class="marquee-item">Heavy Embroidery</span>
+    <span class="marquee-item">Wide Silhouettes</span>
+    <span class="marquee-item">SS 2026</span>
+    <span class="marquee-item">New Arrivals</span>
+    <span class="marquee-item">WXZ Mens Clothing</span>
+    <span class="marquee-item">Abuja Nigeria</span>
+    <span class="marquee-item">Heavy Embroidery</span>
+    <span class="marquee-item">Wide Silhouettes</span>
+    <span class="marquee-item">SS 2026</span>
+  </div>
+</div>
+
+<!-- SHOP / COLLECTIONS -->
+<section class="section" id="collections">
+  <div class="section-header">
+    <h2 class="section-title reveal">Shop <em>Now</em></h2>
+    <a href="#" class="section-link reveal">All products</a>
+  </div>
+  <div class="product-grid">
+
+    <div class="product-card reveal" onclick="openModal(0)">
+      <span class="product-tag">Featured</span>
+      <img src="images/hero.jpg" alt="Galaxy Knit Sweater" class="product-img" />
+      <button class="product-quick">⊕</button>
+      <div class="product-info">
+        <div class="product-name">Galaxy Knit Sweater</div>
+        <div class="product-price">₦85,000</div>
+      </div>
+    </div>
+
+    <div class="product-card reveal reveal-delay-1" onclick="openModal(1)">
+      <span class="product-tag">New</span>
+      <img src="images/jeans-stud.jpg" alt="Star Stud Wide Jeans" class="product-img" />
+      <button class="product-quick">⊕</button>
+      <div class="product-info">
+        <div class="product-name">Star Stud Wide Jeans</div>
+        <div class="product-price">₦72,000</div>
+      </div>
+    </div>
+
+    <div class="product-card reveal reveal-delay-2" onclick="openModal(2)">
+      <img src="images/hoodie-stud.jpg" alt="Cross Stud Zip Hoodie" class="product-img" />
+      <button class="product-quick">⊕</button>
+      <div class="product-info">
+        <div class="product-name">Cross Stud Zip Hoodie</div>
+        <div class="product-price">₦68,000</div>
+      </div>
+    </div>
+
+    <div class="product-card reveal reveal-delay-1" onclick="openModal(3)">
+      <img src="images/scroll-denim.jpg" alt="Scroll Print Denim" class="product-img" />
+      <button class="product-quick">⊕</button>
+      <div class="product-info">
+        <div class="product-name">Scroll Print Denim</div>
+        <div class="product-price">₦70,000</div>
+      </div>
+    </div>
+
+    <div class="product-card reveal reveal-delay-2" onclick="openModal(4)">
+      <img src="images/leather-black.jpg" alt="Davril Leather Jacket" class="product-img" />
+      <button class="product-quick">⊕</button>
+      <div class="product-info">
+        <div class="product-name">Davril Leather Jacket</div>
+        <div class="product-price">₦145,000</div>
+      </div>
+    </div>
+
+    <div class="product-card reveal reveal-delay-3" onclick="openModal(5)">
+      <span class="product-tag">Limited</span>
+      <img src="images/leather-red.jpg" alt="Red Wing Leather Jacket" class="product-img" />
+      <button class="product-quick">⊕</button>
+      <div class="product-info">
+        <div class="product-name">Red Wing Leather Jacket</div>
+        <div class="product-price">₦155,000</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT / FEATURE SPLIT -->
+<div class="feature-split" id="about">
+  <div class="feature-left">
+    <div class="feature-eyebrow reveal">Our Philosophy</div>
+    <h2 class="feature-title reveal reveal-delay-1">Crafted for<br /><em>the Bold</em></h2>
+    <p class="feature-body reveal reveal-delay-2">
+      Born in Abuja, WXZ men's clothing is a statement of intentional dressing.
+      Every piece carries heavy embroidery, wide silhouettes, and meticulous detail —
+      clothing that commands a room before a word is spoken.
+    </p>
+    <div class="feature-stats reveal reveal-delay-3">
+      <div class="stat-item">
+        <div class="stat-num">3<em>K+</em></div>
+        <div class="stat-label">Pieces Sold</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num"><em>∞</em></div>
+        <div class="stat-label">Styles Unlocked</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">1<em>st</em></div>
+        <div class="stat-label">In Abuja</div>
+      </div>
+    </div>
+  </div>
+  <div class="feature-right">
+    <img src="images/cardigan.jpg" alt="WXZ Cardigan" class="feature-img" />
+  </div>
+</div>
+
+<!-- LOOKBOOK -->
+<section class="lookbook" id="lookbook">
+  <div class="lookbook-header section-header">
+    <h2 class="section-title reveal">Look<em>book</em></h2>
+    <a href="#" class="section-link reveal">Full lookbook</a>
+  </div>
+  <div class="lookbook-mosaic">
+    <div class="look-item reveal">
+      <img src="images/military-hoodie.jpg" alt="Look 01" class="look-img" />
+      <span class="look-label">Look 01 — Military Hoodie</span>
+    </div>
+    <div class="look-item reveal reveal-delay-1">
+      <img src="images/hoodie-grey.jpg" alt="Look 02" class="look-img" />
+      <span class="look-label">Look 02 — Grey + Red</span>
+    </div>
+    <div class="look-item reveal reveal-delay-2">
+      <img src="images/wide-jeans.jpg" alt="Look 03" class="look-img" />
+      <span class="look-label">Look 03 — Red Scroll Jeans</span>
+    </div>
+    <div class="look-item reveal reveal-delay-3">
+      <img src="images/bomber-spiral.jpg" alt="Look 04" class="look-img" />
+      <span class="look-label">Look 04 — Spiral Bomber</span>
+    </div>
+    <div class="look-item reveal reveal-delay-2">
+      <img src="images/spiral-full.jpg" alt="Look 05" class="look-img" />
+      <span class="look-label">Look 05 — Full Look</span>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY QUOTE -->
+<div class="philosophy">
+  <div class="phil-eyebrow reveal">The WXZ Way</div>
+  <blockquote class="phil-quote reveal reveal-delay-1">
+    "Clothes are the <em>first language</em> you speak —
+    make sure yours says something worth hearing."
+  </blockquote>
+  <div class="phil-line reveal reveal-delay-2"></div>
+  <p class="phil-body reveal reveal-delay-3">
+    From the streets of Abuja to every city that demands presence — WXZ is for men who
+    understand that dressing is a form of self-expression that goes far beyond fashion.
+  </p>
+</div>
+
+<!-- NEW ARRIVALS -->
+<section class="new-arrivals">
+  <div class="na-header section-header">
+    <h2 class="section-title reveal">New <em>Arrivals</em></h2>
+    <a href="#" class="section-link reveal">See all</a>
+  </div>
+  <div class="na-scroll-wrap" id="naScroll">
+    <div class="na-track">
+
+      <div class="na-card" onclick="openModal(6)">
+        <div class="na-img-wrap"><img src="images/bird-cardigan.jpg" alt="323 Bird Cardigan" class="na-img" /></div>
+        <div class="na-name">323 Bird Cardigan</div>
+        <div class="na-meta"><span>Knitwear</span><span>₦78,000</span></div>
+      </div>
+
+      <div class="na-card" onclick="openModal(7)">
+        <div class="na-img-wrap"><img src="images/light-jeans.jpg" alt="Light Wash Star Jeans" class="na-img" /></div>
+        <div class="na-name">Light Wash Star Jeans</div>
+        <div class="na-meta"><span>Denim</span><span>₦65,000</span></div>
+      </div>
+
+      <div class="na-card" onclick="openModal(8)">
+        <div class="na-img-wrap"><img src="images/red-scroll-jeans.jpg" alt="Red Scroll Jeans" class="na-img" /></div>
+        <div class="na-name">Red Scroll Embroidery Jeans</div>
+        <div class="na-meta"><span>Denim</span><span>₦68,000</span></div>
+      </div>
+
+      <div class="na-card" onclick="openModal(9)">
+        <div class="na-img-wrap"><img src="images/spiral-full.jpg" alt="Spiral Bomber" class="na-img" /></div>
+        <div class="na-name">Spiral Bomber Jacket</div>
+        <div class="na-meta"><span>Outerwear</span><span>₦120,000</span></div>
+      </div>
+
+      <div class="na-card" onclick="openModal(10)">
+        <div class="na-img-wrap"><img src="images/velvet-bomber.jpg" alt="Cross Velvet Bomber" class="na-img" /></div>
+        <div class="na-name">Cross Velvet Bomber</div>
+        <div class="na-meta"><span>Outerwear</span><span>₦135,000</span></div>
+      </div>
+
+      <div class="na-card" onclick="openModal(11)">
+        <div class="na-img-wrap"><img src="images/ribbed-knit.jpg" alt="Scrollwork Ribbed Knit" class="na-img" /></div>
+        <div class="na-name">Scrollwork Ribbed Knit</div>
+        <div class="na-meta"><span>Knitwear</span><span>₦82,000</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- STORE LOCATION -->
+<div class="location-strip" id="store">
+  <div class="loc-icon">📍</div>
+  <div>
+    <div class="loc-label">Our Store</div>
+    <div class="loc-name">Abuja, Nigeria</div>
+  </div>
+  <div class="loc-divider"></div>
+  <div>
+    <div class="loc-hours-title">Opening Hours</div>
+    <div class="loc-hours-text">Mon – Sat: 10:00am – 8:00pm<br />Sunday: 12:00pm – 6:00pm</div>
+  </div>
+  <div class="loc-divider"></div>
+  <div>
+    <div class="loc-hours-title">Contact</div>
+    <div class="loc-hours-text">@wxzmensclothing<br />info@wxzclothing.ng</div>
+  </div>
+  <div class="loc-cta">
+    <a href="#" class="btn-primary">Get Directions</a>
+  </div>
+</div>
+
+<!-- NEWSLETTER -->
+<div class="newsletter">
+  <div class="nl-eyebrow reveal">Stay Connected</div>
+  <h2 class="nl-title reveal reveal-delay-1">Join the<br /><em>Inner Circle</em></h2>
+  <p class="nl-sub reveal reveal-delay-2">Early drops. Exclusive collabs. No noise.</p>
+  <form class="nl-form reveal reveal-delay-3" onsubmit="handleSubscribe(event)">
+    <input class="nl-input" type="email" placeholder="your@email.com" required />
+    <button class="nl-btn" type="submit">Subscribe</button>
+  </form>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">W<span>X</span>Z</div>
+      <p class="footer-tagline">Premium menswear from the heart of Abuja. Built for bold men who dress with intention.</p>
+      <div class="footer-socials">
+        <a href="#" class="footer-social" title="Instagram">𝕀</a>
+        <a href="#" class="footer-social" title="Twitter/X">𝕏</a>
+        <a href="#" class="footer-social" title="TikTok">♪</a>
+        <a href="#" class="footer-social" title="WhatsApp">✉</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links">
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Outerwear</a></li>
+        <li><a href="#">Denim</a></li>
+        <li><a href="#">Knitwear</a></li>
+        <li><a href="#">Accessories</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Info</div>
+      <ul class="footer-links">
+        <li><a href="#">About WXZ</a></li>
+        <li><a href="#">Sizing Guide</a></li>
+        <li><a href="#">Shipping &amp; Returns</a></li>
+        <li><a href="#">Care Instructions</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Support</div>
+      <ul class="footer-links">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Track Order</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">WhatsApp Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 WXZ Mens Clothing · Abuja, Nigeria</div>
+    <div class="footer-legal">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Cookies</a>
+    </div>
+  </div>
+</footer>
+
+<!-- PRODUCT MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOnOverlay(event)">
+  <div class="modal">
+    <img src="" alt="" class="modal-img" id="modalImg" />
+    <div class="modal-info">
+      <div class="modal-tag"  id="modalTag"></div>
+      <div class="modal-name" id="modalName"></div>
+      <div class="modal-price" id="modalPrice"></div>
+      <p class="modal-desc"   id="modalDesc"></p>
+      <div class="modal-sizes">
+        <button class="size-btn"        onclick="selectSize(this)">S</button>
+        <button class="size-btn"        onclick="selectSize(this)">M</button>
+        <button class="size-btn active" onclick="selectSize(this)">L</button>
+        <button class="size-btn"        onclick="selectSize(this)">XL</button>
+        <button class="size-btn"        onclick="selectSize(this)">XXL</button>
+      </div>
+      <button class="modal-add" onclick="addToCart()">Add to Bag</button>
+    </div>
+    <button class="modal-close" onclick="closeModal()">×</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
